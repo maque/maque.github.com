@@ -1,107 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>maque.onlyverse</title>
-  <meta name="author" content="maque">
-
-  
-  <meta name="description" content="I really love Head First books series. After all of this boring stuff you have to go through as developer, finally someone discover that picture is &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://maque.github.io">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="maque.onlyverse" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="stylesheets/sons-of-obsidian.css" type="text/css" rel="stylesheet" />
-<script src="javascripts/prettify/prettify.js" type="text/javascript"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $("article pre:has(> code):not(.nohl)").addClass("prettyprint");
-    prettyPrint();
-  });
-</script>
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">maque.onlyverse</a></h1>
-  
-    <h2>Developer paths</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:maque.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[maque.onlyverse]]></title>
+  <link href="http://maque.github.io/atom.xml" rel="self"/>
+  <link href="http://maque.github.io/"/>
+  <updated>2014-04-20T10:36:31+01:00</updated>
+  <id>http://maque.github.io/</id>
+  <author>
+    <name><![CDATA[maque]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2014/04/18/head-first-oo-analisys-and-design-quick-summary/">Head First OO Analysis &amp; Design - Quick Summary</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2014-04-18T18:09:30+01:00" pubdate data-updated="true">Apr 18<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img class="right" src="/images/post/hfooad_cover.gif" width="180" height="208" title="image" alt="images"></p>
+  <entry>
+    <title type="html"><![CDATA[Head First OO Analysis &amp; Design - Quick Summary]]></title>
+    <link href="http://maque.github.io/blog/2014/04/18/head-first-oo-analisys-and-design-quick-summary/"/>
+    <updated>2014-04-18T18:09:30+01:00</updated>
+    <id>http://maque.github.io/blog/2014/04/18/head-first-oo-analisys-and-design-quick-summary</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://maque.github.io/images/post/hfooad_cover.gif" width="180" height="208" title="image" alt="images"></p>
 
 <p>I really love Head First books series. After all of this boring stuff you have to go through as developer, finally someone discover that picture is worth a 1k words.</p>
 
@@ -210,42 +127,15 @@ different form is always refreshing, also is always good to systematize your kno
 </li>
 </ol>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/03/12/dry-computation/">DRY Computation</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-12T17:09:13+00:00" pubdate data-updated="true">Mar 12<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>There is this one nice &amp; simple principle: don’t repeat yourself. Basically you shouldn’t repeat your code if you can create more generic method, after all it’s good for code maintainability.</p>
+  <entry>
+    <title type="html"><![CDATA[DRY Computation]]></title>
+    <link href="http://maque.github.io/blog/2014/03/12/dry-computation/"/>
+    <updated>2014-03-12T17:09:13+00:00</updated>
+    <id>http://maque.github.io/blog/2014/03/12/dry-computation</id>
+    <content type="html"><![CDATA[<p>There is this one nice &amp; simple principle: don’t repeat yourself. Basically you shouldn’t repeat your code if you can create more generic method, after all it’s good for code maintainability.</p>
 
 <p>But being to DRY on your side can easily cause strange behavior. Recently I’ve noticed really weird behavior of SQL Management Studio. If you will open lots of tabs and close them, you will see what i mean – whole SQL MS window is jumping like a tiger from Winnie the pooh.</p>
 
@@ -339,42 +229,15 @@ different form is always refreshing, also is always good to systematize your kno
 
 
 <p>After all you will always end up with writing method for dealing with all items (adding, removing, changing) and starting with this point can let you avoid a lot of problems in future. Also very quick it made you to rewrite your methods and optimize all code.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/03/10/ymni-vs-yagni/">YMNI vs YAGNI</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-10T17:08:59+00:00" pubdate data-updated="true">Mar 10<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>YAGNI (<strong>You aren&rsquo;t gonna need it</strong>) principle sound nice when you hear it. After all why to bother your self wasting time for something that you probably won&rsquo;t use.
+  <entry>
+    <title type="html"><![CDATA[YMNI vs YAGNI]]></title>
+    <link href="http://maque.github.io/blog/2014/03/10/ymni-vs-yagni/"/>
+    <updated>2014-03-10T17:08:59+00:00</updated>
+    <id>http://maque.github.io/blog/2014/03/10/ymni-vs-yagni</id>
+    <content type="html"><![CDATA[<p>YAGNI (<strong>You aren&rsquo;t gonna need it</strong>) principle sound nice when you hear it. After all why to bother your self wasting time for something that you probably won&rsquo;t use.
 Well, it sounds good only for features or bunch of &ldquo;maybe need&rdquo; methods like getters &amp; setter.</p>
 
 <p>But sometimes you can start excusing your laziness with yagni. For example when you know you need only two categories with items. That&rsquo;s the plan, so it&rsquo;s easy to you just duplicate lists and rename them. It&rsquo;s easier than playing with embedded list, geting header for each of them, specially when you are using some external tools like Kendo UI. And definitely easier when you are working with legacy code.</p>
@@ -411,84 +274,7 @@ Also although your code is clean&amp;perfect doesn&rsquo;t mean you release proc
 <p><strong>3. Assume there will be a lot of exceptions and don&rsquo;t make any.</strong></p>
 
 <p>You can start project with set of features, nice and clean, logically composed. But then suddenly client will tell you something like this: &ldquo;Well, we want to show this product the same as it was, but with special sparkling animation, just for this one&rdquo;. Do not believe that! Don&rsquo;t try to put special flag, &ldquo;if&rdquo;, exception, or any other &lsquo;hack&rsquo; just for one item. Remember about doing this 100 times? This is so obvious and yet I saw that so many times.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Categories</h1>
-  <ul id="categories">
-    <li class='category'><a href='/blog/categories/books/'>Books (1)</a></li>
-<li class='category'><a href='/blog/categories/principlesrevisited/'>PrinciplesRevisited (2)</a></li>
-<li class='category'><a href='/blog/categories/summary/'>Summary (1)</a></li>
-
-  </ul>
-</section><section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2014/04/18/head-first-oo-analisys-and-design-quick-summary/">Head First OO Analysis &amp; Design - Quick Summary</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/12/dry-computation/">DRY Computation</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/10/ymni-vs-yagni/">YMNI vs YAGNI</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - maque -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

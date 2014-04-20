@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Books | maque.onlyverse]]></title>
+  <link href="http://maque.github.io/blog/categories/books/atom.xml" rel="self"/>
+  <link href="http://maque.github.io/"/>
+  <updated>2014-04-20T10:36:31+01:00</updated>
+  <id>http://maque.github.io/</id>
+  <author>
+    <name><![CDATA[maque]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Head First OO Analysis &amp; Design - Quick Summary]]></title>
+    <link href="http://maque.github.io/blog/2014/04/18/head-first-oo-analisys-and-design-quick-summary/"/>
+    <updated>2014-04-18T18:09:30+01:00</updated>
+    <id>http://maque.github.io/blog/2014/04/18/head-first-oo-analisys-and-design-quick-summary</id>
+    <content type="html"><![CDATA[<p><img class="right" src="/images/post/hfooad_cover.gif" width="180" height="208" title="&lsquo;image&rsquo; &lsquo;images&rsquo;" ></p>
+
+<p>I really love Head First books series. After all of this boring stuff you have to go through as developer, finally someone discover that picture is worth a 1k words.</p>
+
+<p>I must admit that 2/3 of book is pretty interesting. Reminding things you already know but in a little
+different form is always refreshing, also is always good to systematize your knowledge. Bellow is summary which helped me squeeze book into few paragraphs and bullet points.</p>
+
+<h2>Great software is 3 easy steps:</h2>
+
+<ol>
+<li><p>Make sure your software does what the customer wants it to do.</p>
+
+<ul>
+<li><strong>Don&rsquo;t create problems to solve problems.</strong></li>
+<li><strong>You need to understand how your software is going to be used.</strong></li>
+<li><strong>Plan for things going wrong.</strong></li>
+</ul>
+
+
+<p> This is so obvious yet everyone seems to forgetting about this part. At the basic level it&rsquo;s just providing working, free of bugs software. So remember, it doesn&rsquo;t mean &ldquo;provide whatever before deadline&rdquo; or &ldquo;make something which looks like working software and then quickly switch to different project&rdquo;.</p>
+
+<p> More sophisticated approach to this step is to provide software on which client can rely on as well as that software will behave as client is expecting, not the way which is easier for developers.
+ Each time I see <strong>&ldquo;pending changes&rdquo; in TFS</strong> for unchanged files I&rsquo;m dreaming about sending this book to the Redmond office.</p></li>
+<li><p>Apply basic OO principles to add flexibility</p>
+
+<ul>
+<li>Create encapsulation for duplicated parts of code</li>
+<li>Encapsulate what varies</li>
+<li>Apply SRP (and other SOLID stuff). CRC cards are good!</li>
+<li>Code to an interface rather than to an implementation</li>
+</ul>
+</li>
+<li><p> Strive for a maintainable reusable design.</p>
+
+<ul>
+<li>Use delegation, composition and aggregation to achieve flexible and easy to maintain software</li>
+<li>Create abstraction for common behaviour</li>
+<li>Write cohesive classes
+
+<ul>
+<li>how many classes you need to <strong>add</strong> to add new feature?</li>
+<li>how many classes you need to  <strong>change</strong> to add new feature?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+
+
+<h2>Solving really big problems</h2>
+
+<p>This one I made a little bit different than in book</p>
+
+<ol>
+<li><p>Describe system by:</p>
+
+<ul>
+<li>commonality (what is the system like)</li>
+<li>variability (what is the system not like)</li>
+<li>from this point you can start writing features list</li>
+<li>Defer details &ndash; see big picture first</li>
+</ul>
+</li>
+<li><p>Describe how system will be used by different actors</p>
+
+<p> I really don&rsquo;t like UML notation, personally I think it&rsquo;s to artificial. So I would use:</p>
+
+<ul>
+<li>Mocks to show main parts of system</li>
+<li>BDD to deeper analyse features and requirements</li>
+<li>Define actors of system. Actor is not necessary a human or client</li>
+<li>Define main actions that can be taken by actors.</li>
+</ul>
+</li>
+<li><p>Gather features from customer and figure out requirements (several requirements are part of one feature)</p></li>
+<li><p>Write use cases with:</p>
+
+<ul>
+<li>clear value to the system</li>
+<li>start and stop</li>
+<li>external initiator (don&rsquo;t confuse with actor)</li>
+</ul>
+</li>
+<li><p>Prepare domain analysis (map use cases to objects in software)</p></li>
+<li><p>Prepare implementation plan</p></li>
+<li><p>Split features and functionalities into smaller modules.</p></li>
+<li><p>Iterate breaking big pieces into small ones.</p></li>
+<li><p>Focus on significant functions first.</p>
+
+<ul>
+<li>Is it part of the <strong>essence</strong> of the system?</li>
+<li>Does this part introduce <strong>risk</strong>?</li>
+<li>Start in place where you can reduce <strong>risk</strong></li>
+<li>Focus on one feature at a time</li>
+</ul>
+</li>
+<li><p>Build on what you&rsquo;ve already got done whenever possible.</p>
+
+<p>Again some of those rules seems obvious yet it is so easy to just jump around trying to finish everything at first time.</p></li>
+<li><p>Iterate through scenario until you cover:</p>
+
+<ul>
+<li>all features</li>
+<li>all use cases</li>
+<li>all use cases scenario (happy path, alternative path)</li>
+</ul>
+</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

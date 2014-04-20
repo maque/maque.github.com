@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>maque.onlyverse</title>
+  <title>DRY Computation - maque.onlyverse</title>
   <meta name="author" content="maque">
 
   
-  <meta name="description" content="I really love Head First books series. After all of this boring stuff you have to go through as developer, finally someone discover that picture is &hellip;">
+  <meta name="description" content="There is this one nice &amp; simple principle: don’t repeat yourself. Basically you shouldn’t repeat your code if you can create more generic method &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://maque.github.io">
+  <link rel="canonical" href="http://maque.github.io/blog/2014/03/12/dry-computation">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="maque.onlyverse" type="application/atom+xml">
@@ -70,159 +70,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/04/18/head-first-oo-analisys-and-design-quick-summary/">Head First OO Analysis &amp; Design - Quick Summary</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-18T18:09:30+01:00" pubdate data-updated="true">Apr 18<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img class="right" src="/images/post/hfooad_cover.gif" width="180" height="208" title="image" alt="images"></p>
-
-<p>I really love Head First books series. After all of this boring stuff you have to go through as developer, finally someone discover that picture is worth a 1k words.</p>
-
-<p>I must admit that 2/3 of book is pretty interesting. Reminding things you already know but in a little
-different form is always refreshing, also is always good to systematize your knowledge. Bellow is summary which helped me squeeze book into few paragraphs and bullet points.</p>
-
-<h2>Great software is 3 easy steps:</h2>
-
-<ol>
-<li><p>Make sure your software does what the customer wants it to do.</p>
-
-<ul>
-<li><strong>Don&rsquo;t create problems to solve problems.</strong></li>
-<li><strong>You need to understand how your software is going to be used.</strong></li>
-<li><strong>Plan for things going wrong.</strong></li>
-</ul>
-
-
-<p> This is so obvious yet everyone seems to forgetting about this part. At the basic level it&rsquo;s just providing working, free of bugs software. So remember, it doesn&rsquo;t mean &ldquo;provide whatever before deadline&rdquo; or &ldquo;make something which looks like working software and then quickly switch to different project&rdquo;.</p>
-
-<p> More sophisticated approach to this step is to provide software on which client can rely on as well as that software will behave as client is expecting, not the way which is easier for developers.
- Each time I see <strong>&ldquo;pending changes&rdquo; in TFS</strong> for unchanged files I&rsquo;m dreaming about sending this book to the Redmond office.</p></li>
-<li><p>Apply basic OO principles to add flexibility</p>
-
-<ul>
-<li>Create encapsulation for duplicated parts of code</li>
-<li>Encapsulate what varies</li>
-<li>Apply SRP (and other SOLID stuff). CRC cards are good!</li>
-<li>Code to an interface rather than to an implementation</li>
-</ul>
-</li>
-<li><p> Strive for a maintainable reusable design.</p>
-
-<ul>
-<li>Use delegation, composition and aggregation to achieve flexible and easy to maintain software</li>
-<li>Create abstraction for common behaviour</li>
-<li>Write cohesive classes
-
-<ul>
-<li>how many classes you need to <strong>add</strong> to add new feature?</li>
-<li>how many classes you need to  <strong>change</strong> to add new feature?</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-
-
-<h2>Solving really big problems</h2>
-
-<p>This one I made a little bit different than in book</p>
-
-<ol>
-<li><p>Describe system by:</p>
-
-<ul>
-<li>commonality (what is the system like)</li>
-<li>variability (what is the system not like)</li>
-<li>from this point you can start writing features list</li>
-<li>Defer details &ndash; see big picture first</li>
-</ul>
-</li>
-<li><p>Describe how system will be used by different actors</p>
-
-<p> I really don&rsquo;t like UML notation, personally I think it&rsquo;s to artificial. So I would use:</p>
-
-<ul>
-<li>Mocks to show main parts of system</li>
-<li>BDD to deeper analyse features and requirements</li>
-<li>Define actors of system. Actor is not necessary a human or client</li>
-<li>Define main actions that can be taken by actors.</li>
-</ul>
-</li>
-<li><p>Gather features from customer and figure out requirements (several requirements are part of one feature)</p></li>
-<li><p>Write use cases with:</p>
-
-<ul>
-<li>clear value to the system</li>
-<li>start and stop</li>
-<li>external initiator (don&rsquo;t confuse with actor)</li>
-</ul>
-</li>
-<li><p>Prepare domain analysis (map use cases to objects in software)</p></li>
-<li><p>Prepare implementation plan</p></li>
-<li><p>Split features and functionalities into smaller modules.</p></li>
-<li><p>Iterate breaking big pieces into small ones.</p></li>
-<li><p>Focus on significant functions first.</p>
-
-<ul>
-<li>Is it part of the <strong>essence</strong> of the system?</li>
-<li>Does this part introduce <strong>risk</strong>?</li>
-<li>Start in place where you can reduce <strong>risk</strong></li>
-<li>Focus on one feature at a time</li>
-</ul>
-</li>
-<li><p>Build on what you&rsquo;ve already got done whenever possible.</p>
-
-<p>Again some of those rules seems obvious yet it is so easy to just jump around trying to finish everything at first time.</p></li>
-<li><p>Iterate through scenario until you cover:</p>
-
-<ul>
-<li>all features</li>
-<li>all use cases</li>
-<li>all use cases scenario (happy path, alternative path)</li>
-</ul>
-</li>
-</ol>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/03/12/dry-computation/">DRY Computation</a></h1>
+      <h1 class="entry-title">DRY Computation</h1>
     
     
       <p class="meta">
@@ -245,7 +98,7 @@ different form is always refreshing, also is always good to systematize your kno
   </header>
 
 
-  <div class="entry-content"><p>There is this one nice &amp; simple principle: don’t repeat yourself. Basically you shouldn’t repeat your code if you can create more generic method, after all it’s good for code maintainability.</p>
+<div class="entry-content"><p>There is this one nice &amp; simple principle: don’t repeat yourself. Basically you shouldn’t repeat your code if you can create more generic method, after all it’s good for code maintainability.</p>
 
 <p>But being to DRY on your side can easily cause strange behavior. Recently I’ve noticed really weird behavior of SQL Management Studio. If you will open lots of tabs and close them, you will see what i mean – whole SQL MS window is jumping like a tiger from Winnie the pooh.</p>
 
@@ -340,22 +193,16 @@ different form is always refreshing, also is always good to systematize your kno
 
 <p>After all you will always end up with writing method for dealing with all items (adding, removing, changing) and starting with this point can let you avoid a lot of problems in future. Also very quick it made you to rewrite your methods and optimize all code.</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/03/10/ymni-vs-yagni/">YMNI vs YAGNI</a></h1>
-    
-    
-      <p class="meta">
-        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">maque</span></span>
+
+      
 
 
 
@@ -367,63 +214,40 @@ different form is always refreshing, also is always good to systematize your kno
   
 
 
-<time datetime="2014-03-10T17:08:59+00:00" pubdate data-updated="true">Mar 10<span>th</span>, 2014</time>
-        
-      </p>
+<time datetime="2014-03-12T17:09:13+00:00" pubdate data-updated="true">Mar 12<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/principlesrevisited/'>PrinciplesRevisited</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>YAGNI (<strong>You aren&rsquo;t gonna need it</strong>) principle sound nice when you hear it. After all why to bother your self wasting time for something that you probably won&rsquo;t use.
-Well, it sounds good only for features or bunch of &ldquo;maybe need&rdquo; methods like getters &amp; setter.</p>
-
-<p>But sometimes you can start excusing your laziness with yagni. For example when you know you need only two categories with items. That&rsquo;s the plan, so it&rsquo;s easy to you just duplicate lists and rename them. It&rsquo;s easier than playing with embedded list, geting header for each of them, specially when you are using some external tools like Kendo UI. And definitely easier when you are working with legacy code.</p>
-
-<p>And then suddenly, client call and he want 20 list for tomorrow. You already did two, can&rsquo;t you just copy and paste 18? I&rsquo;m sure it&rsquo;s like 5min. for you, isn&rsquo;t it?</p>
-
-<p>So You May Need It</p>
-
-<p>If you have already followed YAGNI principle to far it will become hell for you. You didn&rsquo;t write any administration panel, there is no table in database for product type, ale the tables assumes that there are only two product types. It wouldn&rsquo;t be a problem if you were developing in nice &amp; clean scrum/agile/bdd work place with time to analyze every new feature.
-But our life isn&rsquo;t so easy. Our PM&rsquo;s not necessary had everything set up with client, sometimes there is no written agreement at all about changes, fixes &amp; features and client IS ALWAYS EXPECTING TO MAKE IT ASAP!
-Even if you PM understand you had followed YAGNI principle doesn&rsquo;t mean you can wait with release to next month. Probably they want this change today at 5pm, maybe tomorrow morning.</p>
-
-<p>If you would follow YAGNI really strict you will end up with not layered code, no abstraction and not prepared to any changes. It&rsquo;s not only if you follow this principle standalone, but also if you have continuous refactoring it&rsquo;s still not as good as it sounds.</p>
-
-<p>Reason is simple: Client is always lying.
-He lies about changes. He will tell you he need only change logo, but then he reminds himself that also other &ldquo;few minor&rdquo; changes are needed.
-He lies about deadline.Very often deadline is fluid, you are waiting for aproval from pm&rsquo;s and directors, each of them want to change &ldquo;only small thing&rdquo;. You never have &ldquo;finished&rdquo; software at the day of realese &ndash; you have only software that director agreed to show to the people.</p>
-
-<p>Also, let be honest, assuming you are working in company &ndash; do you really have time to write bunch of code lines without need for using it? Maybe at the very beginning of project with no legacy code what so ever.</p>
-
-<p>If you found yourself adding manually records to database, because in the last moment client change mind, you know you followed YAGNI to far.</p>
-
-<p>Here are my few tips for working with YAGNI but keeping in mind YMNI</p>
-
-<p><strong>1. Assume you will need release your code 5 times in one day. Each with different set of features. Each for different server.</strong></p>
-
-<p>With this assumption you will prepare really good plan for releases. You will prepare proper source control workflow (git workflow, branch by feature). With this assumption you can&rsquo;t just overwrite/copy&amp;paste files in folder. There is no time for that and there is no space for mistake.You need to have build check &amp; unit test before each release.
-Also although your code is clean&amp;perfect doesn&rsquo;t mean you release process is. You spend so much time with IoC, TDD and SOLID that now changing manually connection string after releasing to new server seems good enough. Well, it isn&rsquo;t.</p>
-
-<p><strong>2. Assume you will need add this one setting, role, product, type 100 times more in the future.</strong></p>
-
-<p>You saw this so many times, why now you are believe this will be different?</p>
-
-<p><strong>3. Assume there will be a lot of exceptions and don&rsquo;t make any.</strong></p>
-
-<p>You can start project with set of features, nice and clean, logically composed. But then suddenly client will tell you something like this: &ldquo;Well, we want to show this product the same as it was, but with special sparkling animation, just for this one&rdquo;. Do not believe that! Don&rsquo;t try to put special flag, &ldquo;if&rdquo;, exception, or any other &lsquo;hack&rsquo; just for one item. Remember about doing this 100 times? This is so obvious and yet I saw that so many times.</p>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://maque.github.io/blog/2014/03/12/dry-computation/" data-via="" data-counturl="http://maque.github.io/blog/2014/03/12/dry-computation/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/03/10/ymni-vs-yagni/" title="Previous Post: YMNI vs YAGNI">&laquo; YMNI vs YAGNI</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/04/18/head-first-oo-analisys-and-design-quick-summary/" title="Next Post: Head First OO Analysis &amp; Design - Quick Summary">Head First OO Analysis &amp; Design - Quick Summary &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -459,6 +283,7 @@ Also although your code is clean&amp;perfect doesn&rsquo;t mean you release proc
 
   
 </aside>
+
 
     </div>
   </div>

@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Head First OO Analysis &amp; Design - Quick Summary - maque.onlyverse</title>
+  <meta name="author" content="maque">
+
+  
+  <meta name="description" content="I really love Head First books series. After all of this boring stuff you have to go through as developer, finally someone discover that picture is &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://maque.github.io/blog/2014/04/18/head-first-oo-analisys-and-design-quick-summary">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="maque.onlyverse" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="stylesheets/sons-of-obsidian.css" type="text/css" rel="stylesheet" />
+<script src="javascripts/prettify/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("article pre:has(> code):not(.nohl)").addClass("prettyprint");
+    prettyPrint();
+  });
+</script>
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">maque.onlyverse</a></h1>
+  
+    <h2>Developer paths</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:maque.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Head First OO Analysis &amp; Design - Quick Summary</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-18T18:09:30+01:00" pubdate data-updated="true">Apr 18<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><img class="right" src="/images/post/hfooad_cover.gif" width="180" height="208" title="image" alt="images"></p>
+
+<p>I really love Head First books series. After all of this boring stuff you have to go through as developer, finally someone discover that picture is worth a 1k words.</p>
+
+<p>I must admit that 2/3 of book is pretty interesting. Reminding things you already know but in a little
+different form is always refreshing, also is always good to systematize your knowledge. Bellow is summary which helped me squeeze book into few paragraphs and bullet points.</p>
+
+<h2>Great software is 3 easy steps:</h2>
+
+<ol>
+<li><p>Make sure your software does what the customer wants it to do.</p>
+
+<ul>
+<li><strong>Don&rsquo;t create problems to solve problems.</strong></li>
+<li><strong>You need to understand how your software is going to be used.</strong></li>
+<li><strong>Plan for things going wrong.</strong></li>
+</ul>
+
+
+<p> This is so obvious yet everyone seems to forgetting about this part. At the basic level it&rsquo;s just providing working, free of bugs software. So remember, it doesn&rsquo;t mean &ldquo;provide whatever before deadline&rdquo; or &ldquo;make something which looks like working software and then quickly switch to different project&rdquo;.</p>
+
+<p> More sophisticated approach to this step is to provide software on which client can rely on as well as that software will behave as client is expecting, not the way which is easier for developers.
+ Each time I see <strong>&ldquo;pending changes&rdquo; in TFS</strong> for unchanged files I&rsquo;m dreaming about sending this book to the Redmond office.</p></li>
+<li><p>Apply basic OO principles to add flexibility</p>
+
+<ul>
+<li>Create encapsulation for duplicated parts of code</li>
+<li>Encapsulate what varies</li>
+<li>Apply SRP (and other SOLID stuff). CRC cards are good!</li>
+<li>Code to an interface rather than to an implementation</li>
+</ul>
+</li>
+<li><p> Strive for a maintainable reusable design.</p>
+
+<ul>
+<li>Use delegation, composition and aggregation to achieve flexible and easy to maintain software</li>
+<li>Create abstraction for common behaviour</li>
+<li>Write cohesive classes
+
+<ul>
+<li>how many classes you need to <strong>add</strong> to add new feature?</li>
+<li>how many classes you need to  <strong>change</strong> to add new feature?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+
+
+<h2>Solving really big problems</h2>
+
+<p>This one I made a little bit different than in book</p>
+
+<ol>
+<li><p>Describe system by:</p>
+
+<ul>
+<li>commonality (what is the system like)</li>
+<li>variability (what is the system not like)</li>
+<li>from this point you can start writing features list</li>
+<li>Defer details &ndash; see big picture first</li>
+</ul>
+</li>
+<li><p>Describe how system will be used by different actors</p>
+
+<p> I really don&rsquo;t like UML notation, personally I think it&rsquo;s to artificial. So I would use:</p>
+
+<ul>
+<li>Mocks to show main parts of system</li>
+<li>BDD to deeper analyse features and requirements</li>
+<li>Define actors of system. Actor is not necessary a human or client</li>
+<li>Define main actions that can be taken by actors.</li>
+</ul>
+</li>
+<li><p>Gather features from customer and figure out requirements (several requirements are part of one feature)</p></li>
+<li><p>Write use cases with:</p>
+
+<ul>
+<li>clear value to the system</li>
+<li>start and stop</li>
+<li>external initiator (don&rsquo;t confuse with actor)</li>
+</ul>
+</li>
+<li><p>Prepare domain analysis (map use cases to objects in software)</p></li>
+<li><p>Prepare implementation plan</p></li>
+<li><p>Split features and functionalities into smaller modules.</p></li>
+<li><p>Iterate breaking big pieces into small ones.</p></li>
+<li><p>Focus on significant functions first.</p>
+
+<ul>
+<li>Is it part of the <strong>essence</strong> of the system?</li>
+<li>Does this part introduce <strong>risk</strong>?</li>
+<li>Start in place where you can reduce <strong>risk</strong></li>
+<li>Focus on one feature at a time</li>
+</ul>
+</li>
+<li><p>Build on what you&rsquo;ve already got done whenever possible.</p>
+
+<p>Again some of those rules seems obvious yet it is so easy to just jump around trying to finish everything at first time.</p></li>
+<li><p>Iterate through scenario until you cover:</p>
+
+<ul>
+<li>all features</li>
+<li>all use cases</li>
+<li>all use cases scenario (happy path, alternative path)</li>
+</ul>
+</li>
+</ol>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">maque</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-18T18:09:30+01:00" pubdate data-updated="true">Apr 18<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/books/'>Books</a>, <a class='category' href='/blog/categories/summary/'>Summary</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://maque.github.io/blog/2014/04/18/head-first-oo-analisys-and-design-quick-summary/" data-via="" data-counturl="http://maque.github.io/blog/2014/04/18/head-first-oo-analisys-and-design-quick-summary/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/03/12/dry-computation/" title="Previous Post: DRY Computation">&laquo; DRY Computation</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/books/'>Books (1)</a></li>
+<li class='category'><a href='/blog/categories/principlesrevisited/'>PrinciplesRevisited (2)</a></li>
+<li class='category'><a href='/blog/categories/summary/'>Summary (1)</a></li>
+
+  </ul>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/18/head-first-oo-analisys-and-design-quick-summary/">Head First OO Analysis &amp; Design - Quick Summary</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/12/dry-computation/">DRY Computation</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/10/ymni-vs-yagni/">YMNI vs YAGNI</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - maque -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
