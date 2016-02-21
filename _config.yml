@@ -1,0 +1,9 @@
+name: maque it blog
+url: http://maque.github.io
+description: Glimbing a ladder of it perfection
+
+permalink: /:title/
+paginate: 10
+highlighter: pygments
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
