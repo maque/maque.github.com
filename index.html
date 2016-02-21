@@ -3,14 +3,6 @@ layout: default
 title: Solar Theme
 ---
 
-{% for post in site.posts %}
-		{% assign content = post.content %}
-    <article>
-      {% include post.html %}
-    </article>
-	{% endfor %}
-
-
 {% for post in paginator.posts %}
 
 	<article class="post">
@@ -25,7 +17,7 @@ title: Solar Theme
 		{% endif %}
 
 		<div class="post-content">{{ post.content }}</div>
-
+<p class="meta">Posted on <span class="postdate">{{ post.date | date: "%b %d, %Y" }}</span></p>
 	</article>
 
 {% endfor %}

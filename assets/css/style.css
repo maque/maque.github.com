@@ -280,3 +280,11 @@ img.center {
 .icon-anchor {
 	font-size: 65%;
 }
+#content .tag_list li, #sidebar li a.tag_list_link{
+	font-size: 95%;
+	color:#839496;
+	list-style: none;
+}
+#content .tag_list li{
+	list-style: none;
+}

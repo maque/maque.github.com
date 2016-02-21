@@ -1,9 +1,10 @@
-name: maque it blog
+name: maque
 url: http://maque.github.io
-description: Glimbing a ladder of it perfection
+description: Glimbing a ladder of IT perfection
 
 permalink: /:title/
 paginate: 10
 highlighter: pygments
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+gems: ['jekyll-paginate','jekyll-tagging']
