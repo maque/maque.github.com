@@ -12,10 +12,10 @@ One of simplest DemoScene effects is RotoZoom which consists of two parts - scal
 Texture is more tricky part. There are many ways for scaling image yet coders from demoscene quickly found a way to produce both texture and scaling it at the same time. Assuming you have generated grayscale colors from 0 to 255 if you do
 
 {% highlight javascript %}
-	x^y % 255
+	color = graycolors[x^y % 255]
 {% endhighlight %}
 
-you will get nice checker board. When you apply division both to X and Y then obviously you will be scaling board up, and when you multiply in this equastion X and Y then you will be scalling down. Why? Well I will show you this in code:
+you will get nice checker board. When you apply division both to X and Y then you will be scaling board up, and when you multiply in this equastion X and Y then you will be scalling down. Why? Well I will show you this in code:
 
 
 {% highlight javascript %}
@@ -25,7 +25,34 @@ you will get nice checker board. When you apply division both to X and Y then ob
 	}
 {% endhighlight %}
 
-This will produce you nice black/white line. Now lets divide x by 2 and round down - what will happen? For X=0,1 you will get 0, for 2,3 - one and so on which means you will draw twice first pixel, then twice second. By dividing position of pixel you actually you are scaling up texture!
+This will produce you nice black/white line. Now lets divide x by 2 and round down - what will happen? For X=0,1 you will get 0, for 2,3 - one and so on which means you will draw twice first pixel, then twice second. By dividing position of pixel you are actually scaling up texture!
+
+So main part for rotation & drawing a texture will look like this:
+
+{% highlight javascript %}
+//multipler - just any next number used for rotating to new angle
+function DrawChecker(multipler){
+	_Screen.FillWithColor(ColorPalette[0]);
+	angle=multipler*Math.PI;
+    for(y=0;y<height;y++){
+		 yy=-y+height/2;
+         for(x=0;x<width;x++){
+	        xx=x-width/2;
+			   
+		    newx=Math.floor(Math.cos(angle)*xx - yy*Math.sin(angle))+xx+320;
+			newy=Math.floor(Math.sin(angle)*xx+yy*Math.cos(angle))+yy+240;
+		
+		
+			index = Math.abs((newx*multipler)^(newy*multipler))%256;
+			   
+			_Screen.SetPixel(x,y,ColorPalette[index]);
+
+        }
+    }
+		  
+	_Screen.Draw();
+}
+{% endhighlight %}
 
 And now, presentation:
 {% include rotozoom.html %}
