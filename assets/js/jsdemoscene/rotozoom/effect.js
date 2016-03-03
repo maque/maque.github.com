@@ -1,4 +1,4 @@
-var IsRunning=true;
+var IsRunning=false;
 var IntervalAnimation;
 var _Screen;
 var multipler=0;
