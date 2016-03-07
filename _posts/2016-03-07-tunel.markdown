@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Tunel Effect"
+date:   2016-03-07 19:26:25
+categories: demoscene
+tags:
+- dajsiepoznac
+- demoscene
+---
+I remember watching demoscene efects and wondering "What the hell?! How they make those pixels bending into a tunel?"
+Back then I didn't quite understand tunel effect. I was dreaming about different ways of bending, my head was floating into abstract concepts instead of just go back to school at do the math.
+In precious post I was describing roto zoom efect and when you think about it a little bit harder then it gets quite obvious. To have tunel effect you have to:
+1. Scale up texture
+2. Rotate texture
+3. Make this scale around circle from inside to the edges of screen
+
+Seems easy, no?
+Acctually I'm still strugling with it, so I promise next time I will be here with some code & examples
