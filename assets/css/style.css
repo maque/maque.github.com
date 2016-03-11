@@ -288,3 +288,18 @@ img.center {
 #content .tag_list li{
 	list-style: none;
 }
+button{
+	position: relative;
+	top:270px;
+	right:-280px;
+	z-index: 2;
+	height: 60px;
+	width:80px;
+	background-color: #002A35;
+	color:white;
+	border:2px solid 839496;
+}
+canvas{
+	width:640px;
+	height: 480px;
+}

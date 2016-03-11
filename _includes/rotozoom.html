@@ -1,10 +1,11 @@
-<button id="toggleAnimation" onclick="ToggleAnimation();">Press to Animate</button>
-<canvas id="screen" width="640" height="480"></canvas>
-<div id="info"></div>
 
-<script type="text/javascript" src="/assets/js/jsdemoscene/common/Color.js"></script>
-<script type="text/javascript" src="/assets/js/jsdemoscene/common/Screen.js"></script>
+<div>
+<button id="rotozoom-toggleAnimation" onclick="rotozoom.ToggleAnimation();">Press to Animate</button>
+<canvas id="rotozoom-screen" width="640" height="480"></canvas>
+</div>
+
 <script type="text/javascript" src="/assets/js/jsdemoscene/rotozoom/effect.js"></script>
 <script type="text/javascript">
-	Init();
+	var rotozoom = new rotozoom();
+	rotozoom.init();
 </script>
