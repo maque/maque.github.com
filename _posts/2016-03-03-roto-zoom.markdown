@@ -55,6 +55,7 @@ function DrawChecker(multipler){
 	_Screen.Draw();
 }
 {% endhighlight %}
+[full code](https://github.com/maque/JSDemoScene/blob/master/RotoZoom/effect.js){:target="_blank"}
 
 And now, presentation:
 {% include rotozoom.html %}

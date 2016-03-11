@@ -32,6 +32,7 @@ var color = texture[ysize][xsize];
           
 _Screen.SetPixel(x,y,ColorPalette[color]);  
 {% endhighlight %}
+[full code](https://github.com/maque/JSDemoScene/blob/master/Tunel/effect.js){:target="_blank"}
 
 And now, presentation:
 {% include tunel.html %}
